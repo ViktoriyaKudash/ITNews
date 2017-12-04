@@ -1,0 +1,7 @@
+import './galereya.sass';
+
+$(function () {
+
+
+
+});

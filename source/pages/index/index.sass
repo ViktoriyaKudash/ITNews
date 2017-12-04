@@ -1,0 +1,100 @@
+@import "../../common/common-sass/vars"
+@import "../../common/common-sass/base"
+
+.main-content
+  color: #fff
+  padding: 0 40px
+
+.news
+  margin-bottom: 20px
+  &:last-of-type
+    margin-bottom: 0
+    .news__footer
+      border-bottom: none
+  &__thumbnail
+    border-radius: 5px
+  &__content
+    padding: 15px 0
+  &__meta
+    font-size: 12px
+  &__date
+    float: left
+    margin-right: 5px
+  &__categories-list
+    margin: 0
+    list-style-type: none
+    padding: 0
+    &:before
+      content: '|'
+      margin-right: 5px
+  &__categories-item
+    display: inline-block
+    //&:before
+    //  content: '\0323'
+    &:first-of-type:before
+      display: none
+  &__title
+    font-size: 22px
+    margin: 10px 0
+    line-height: 1.4
+    font-weight: 400
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 20px
+    border-bottom: 1px solid #000
+  &__read-more
+    color: #000
+    text-decoration: none
+    font-size: 16px
+  &__data-list
+    margin: 0
+    padding: 0
+    list-style-type: none
+  &__data-item
+    display: inline-block
+    margin-right: 5px
+    i
+      margin-right: 5px
+
+.main-content
+  .news
+    margin-bottom: 20px
+    &:last-of-type
+      .news__footer
+        border-bottom: none
+    &__read-more
+      color: inherit
+    &__footer
+      border-bottom: 1px solid #fff
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  .grid[data-columns]::before
+    content: '1 .column.col-xs-12'
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .grid[data-columns]::before
+    content: '2 .column.col-xs-6'
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/
+
